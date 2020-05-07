@@ -1,8 +1,10 @@
 // ==UserScript==
 // @name         MUI Copy e-mail
 // @namespace    mui_copy_email
-// @version      0.2
+// @version      0.3
 // @description  Grabs the email when you click the object.
+// @updateURL    https://github.com/techslogi/MUI-Copy-Email/raw/master/MUI%20Copy%20e-mail.user.js
+// @downloadURL	 https://github.com/techslogi/MUI-Copy-Email/raw/master/MUI%20Copy%20e-mail.user.js
 // @author       Gabriel Boçon
 // @match        https://secure.volvo.com/mgmui/User/*
 // @grant        GM_notification
