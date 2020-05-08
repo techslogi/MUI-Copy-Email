@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         MUI Copy e-mail
 // @namespace    mui_copy_email
-// @version      0.3
+// @version      0.4
 // @description  Grabs the email when you click the object.
 // @updateURL    https://github.com/techslogi/MUI-Copy-Email/raw/master/MUI%20Copy%20e-mail.user.js
 // @downloadURL	 https://github.com/techslogi/MUI-Copy-Email/raw/master/MUI%20Copy%20e-mail.user.js
@@ -43,7 +43,10 @@ function addListener() {
                 }
                 finally {
                     document.body.removeChild(textarea);
-                    GM_notification ( {title: 'E-mail copied!', text: 'The e-mail ' + emailObj.value + ' has been copied!'} );
+                    GM_notification ( {title: 'E-mail copied!',
+                                       text: 'The e-mail ' + emailObj.value + ' has been copied!',
+                                       timeout: 5000,
+                                       requireInteraction: false} );
                 }
             }
         });
